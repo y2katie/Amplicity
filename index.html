@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png"/>
+    <link rel="stylesheet" href="public/css/tailwind/tailwind.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon.png"/>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
     <style>
       [x-cloak] { display: none !important; }
@@ -157,7 +157,8 @@
         <p class="mb-0 py-3 bg-lime-500 text-center">Solar panels are great — they truly have a bright future. </p>
       </div>
       <div>
-        <section class="relative bg-teal-900" x-data="{ mobileNavOpen: false }"><img class="absolute top-0 left-0 w-full h-full" :class="{'hints-enabled': hintsEnabled}" src="fauna-assets/headers/bg-waves.png" />
+        <section class="relative bg-teal-900" x-data="{ mobileNavOpen: false }">
+          <img class="absolute top-0 left-0 w-full h-full" :class="{'hints-enabled': hintsEnabled}" src="public/fauna-assets/headers/bg-waves.png" />
           <nav class="py-6">
             <div class="container mx-auto px-4">
               <div class="relative flex items-center justify-between"><a class="inline-block violation-hotspot" :class="{'hints-enabled': hintsEnabled, 'violation-found': foundViolations.includes(1)}" href="#" @click.prevent="currentViolation = {id: 1, title: 'Non-descriptive Link Text (Understandable)', description: 'The link text Amplicity does not describe where the link goes or what it does.', pourCategory: 'Understandable'}; violationModal = true" style="color: white; font-size: 20px; font-weight: 900;">Amplicity</a>
@@ -198,7 +199,7 @@
             <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
               <div class="flex flex-wrap -mx-4">
                 <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
-                  <img class="block w-full h-128 sm:h-auto object-cover rounded-3xl violation-hotspot" :class="{'hints-enabled': hintsEnabled, 'violation-found': foundViolations.includes(5)}" src="fauna-assets/about/about-image1.png" alt="" @click.prevent="currentViolation = {id: 5, title: 'Missing Alt Text (Perceivable)', description: 'Image lacks descriptive alternative text for screen readers and users who cannot see images.', pourCategory: 'Perceivable'}; violationModal = true"/>
+                  <img class="block w-full h-128 sm:h-auto object-cover rounded-3xl violation-hotspot" :class="{'hints-enabled': hintsEnabled, 'violation-found': foundViolations.includes(5)}" src="public/fauna-assets/about/about-image1.png" alt="" @click.prevent="currentViolation = {id: 5, title: 'Missing Alt Text (Perceivable)', description: 'Image lacks descriptive alternative text for screen readers and users who cannot see images.', pourCategory: 'Perceivable'}; violationModal = true"/>
                 </div>
                 <div class="flex flex-wrap justify-center -mx-4">
                   <h5 class="text-2xl font-medium mb-3">Solar Power</h5>
@@ -658,12 +659,12 @@
             <h1 class="font-heading text-4xl sm:text-6xl md:text-7xl tracking-sm mb-16">Our commitment to green energy is paving the way for a cleaner, healthier planet. </h1><button type="button" x-on:click="scavOpen = true" class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-white hover:text-teal-900 border border-teal-900 hover:border-lime-500 bg-teal-900 hover:bg-lime-500 rounded-full transition duration-200">Scavenger Hunt</button>
           </div>
           <div class="flex justify-center">
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image2.png" alt="Green energy solar panels"/></div>
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image3.png" alt="Wind turbines generating clean energy"/></div>
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image4.png" alt="Hydroelectric dam power generation"/></div>
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image2.png" alt=""/></div>
-            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image3.png" alt=""/></div>
-            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image4.png" alt=""/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="public/fauna-assets/about/about-image2.png" alt="Green energy solar panels"/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="public/fauna-assets/about/about-image3.png" alt="Wind turbines generating clean energy"/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="public/fauna-assets/about/about-image4.png" alt="Hydroelectric dam power generation"/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="public/fauna-assets/about/about-image2.png" alt=""/></div>
+            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="public/fauna-assets/about/about-image3.png" alt=""/></div>
+            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="public/fauna-assets/about/about-image4.png" alt=""/></div>
           </div>
         </div>
       </section>
@@ -797,17 +798,6 @@
           </div>
         </div>
       </section>
-      <section class="py-12 lg:py-24 overflow-hidden" x-data="{ activeSlide: 1, slideCount: 3 }">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap -mx-4">
-            <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
-              <div class="max-w-lg mx-auto md:mx-0 overflow-hidden">
-                <div class="flex -mx-4 transition-transform duration-500" :style="'transform: translateX(-' + (activeSlide - 1) * 100 + '%)'"><img class="block flex-shrink-0 w-full px-4" src="fauna-assets/testimonials/photo-lg.png" alt=""/><img class="block flex-shrink-0 w-full px-4" src="fauna-assets/testimonials/photo-lg.png" alt=""/><img class="block flex-shrink-0 w-full px-4" src="fauna-assets/testimonials/photo-lg.png" alt=""/></div>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 px-4">
-              <div class="max-w-lg mx-auto md:mr-0 overflow-hidden">
-                <div class="flex -mx-4 transition-transform duration-500" :style="'transform: translateX(-' + (activeSlide - 1) * 100 + '%)'">
                   <div class="flex-shrink-0 px-4 w-full">
                     <h4 class="text-3xl lg:text-4xl font-medium mb-10">“Flow transformed my energy use. Efficient, green tech, outstanding service!”</h4><span class="block text-xl font-medium">Jenny Wilson</span>                                      <span class="block mb-12 lg:mb-32 text-lg text-gray-700">Solar energy service</span>
                   </div>
@@ -858,10 +848,10 @@
           </section>
         </div>
       </div>
-      <section class="relative py-12 lg:py-24 bg-orange-50 overflow-hidden"><img class="absolute bottom-0 left-0" src="fauna-assets/footer/waves-lines-left-bottom.png" alt=""/>
+      <section class="relative py-12 lg:py-24 bg-orange-50 overflow-hidden"><img class="absolute bottom-0 left-0" src="public/fauna-assets/footer/waves-lines-left-bottom.png" alt=""/>
         <div class="container px-4 mx-auto relative">
           <div class="flex flex-wrap mb-16 -mx-4">
-            <div class="w-full lg:w-2/12 xl:w-2/12 px-4 mb-16 lg:mb-0"><a class="inline-block mb-4" href="#"><img src="images/logo.svg" alt=""/></a></div>
+            <div class="w-full lg:w-2/12 xl:w-2/12 px-4 mb-16 lg:mb-0"><a class="inline-block mb-4" href="#"><img src="public/images/logo.svg" alt=""/></a></div>
             <div class="w-full md:w-7/12 lg:w-6/12 px-4 mb-16 lg:mb-0">
               <div class="flex flex-wrap -mx-4">
                 <div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
